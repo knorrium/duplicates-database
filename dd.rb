@@ -1,12 +1,12 @@
 require "digest"
-require 'find'
-require 'optparse'
+require "find"
+require "optparse"
 
 options = {}
 optparse = OptionParser.new do |opts|
   opts.banner = "Usage: #{__FILE__} [options]"
 
-  opts.on('-d', '--directory DIR', 'The directory to scan') do |arg|
+  opts.on("-d", "--directory DIR", "The directory to scan") do |arg|
     options[:directory] = arg
   end
 end
