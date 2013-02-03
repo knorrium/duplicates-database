@@ -27,7 +27,7 @@ rescue OptionParser::InvalidOption, OptionParser::MissingArgument
 end
 
 Find.find(File.expand_path(options[:directory])) do |file|
-	next unless File.file?(file)
-	digest = Digest::SHA256.file(file).hexdigest
-	puts "#{file} - #{digest}"
+  next unless File.file?(file)
+  digest = Digest::SHA256.file(file).hexdigest
+  puts "#{file} - #{digest}"
 end
