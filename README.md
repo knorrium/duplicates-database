@@ -12,7 +12,7 @@ usage
 ruby dd.rb -d [directory]
 ```
 
-the tool will scan the given directory and store the path, size and md5 hash for all the files scanned
+the tool will scan the given directory and store the path, size and md5 hash for all the files scanned in the files.db sqlite3 database
 
 todo
 ====
